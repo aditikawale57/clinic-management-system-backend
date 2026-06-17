@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/api/patients")
+@RequestMapping("/patients")
 @CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 public class PatientController {

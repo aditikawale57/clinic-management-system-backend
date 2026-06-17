@@ -36,6 +36,10 @@ public class SecurityConfig {
             ApiPaths.API_V1 + "/health/**",
             ApiPaths.API_V1 + "/auth/**",
             ApiPaths.API_V1 + "/patients/**",
+            // OpenAPI / Swagger UI
+            "/swagger-ui/**",
+            "/swagger-ui.html",
+            "/v3/api-docs/**",
     };
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;

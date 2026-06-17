@@ -8,6 +8,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import com.vaishnavishealthcare.config.AppProperties;
 import com.vaishnavishealthcare.common.dto.ApiResponse;
@@ -52,6 +53,11 @@ public class GlobalExceptionHandler {
                 .map(this::formatFieldError)
                 .collect(Collectors.joining(","));
         return ApiResponse.failure(HttpStatus.BAD_REQUEST, StatusCode.FAILURE, message);
+    }
+
+    @ExceptionHandler(NoResourceFoundException.class)
+    public ResponseEntity<ApiResponse<Void>> handleNoResource(NoResourceFoundException ex) {
+        return ApiResponse.failure(HttpStatus.NOT_FOUND, StatusCode.FAILURE, "Resource not found");
     }
 
     @ExceptionHandler(Exception.class)
