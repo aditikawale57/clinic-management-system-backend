@@ -1,13 +1,14 @@
-package com.vaishnavishealthcare.controller;
+package com.vaishnavishealthcare.feature.patient.controller;
 
-import com.vaishnavishealthcare.dtos.request.PatientRequestDTO;
-import com.vaishnavishealthcare.dtos.response.PatientResponseDTO;
-import com.vaishnavishealthcare.entity.Patient;
-import com.vaishnavishealthcare.service.PatientService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.vaishnavishealthcare.feature.patient.dto.request.PatientRequestDTO;
+import com.vaishnavishealthcare.feature.patient.dto.response.PatientResponseDTO;
+import com.vaishnavishealthcare.feature.patient.entity.Patient;
+import com.vaishnavishealthcare.feature.patient.service.PatientService;
 
 import java.util.List;
 import java.util.stream.Collectors;

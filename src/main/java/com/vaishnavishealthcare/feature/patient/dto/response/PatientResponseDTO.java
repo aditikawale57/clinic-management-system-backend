@@ -1,4 +1,4 @@
-package com.vaishnavishealthcare.dtos.response;
+package com.vaishnavishealthcare.feature.patient.dto.response;
 
 public record PatientResponseDTO(
     Long id,

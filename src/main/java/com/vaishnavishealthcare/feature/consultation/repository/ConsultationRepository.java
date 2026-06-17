@@ -1,8 +1,9 @@
-package com.vaishnavishealthcare.repository;
+package com.vaishnavishealthcare.feature.consultation.repository;
 
-import com.vaishnavishealthcare.entity.Consultation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.vaishnavishealthcare.feature.consultation.entity.Consultation;
 
 @Repository
 public interface ConsultationRepository extends JpaRepository<Consultation, Long> {

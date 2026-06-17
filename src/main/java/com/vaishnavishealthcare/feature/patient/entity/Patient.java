@@ -1,4 +1,4 @@
-package com.vaishnavishealthcare.entity;
+package com.vaishnavishealthcare.feature.patient.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

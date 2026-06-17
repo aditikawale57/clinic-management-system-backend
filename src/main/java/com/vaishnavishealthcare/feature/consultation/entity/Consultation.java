@@ -1,6 +1,8 @@
-package com.vaishnavishealthcare.entity;
+package com.vaishnavishealthcare.feature.consultation.entity;
 
 import java.time.LocalDate;
+
+import com.vaishnavishealthcare.feature.patient.entity.Patient;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

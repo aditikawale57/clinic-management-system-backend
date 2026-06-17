@@ -1,10 +1,11 @@
-package com.vaishnavishealthcare.service.impl;
+package com.vaishnavishealthcare.feature.patient.service.impl;
 
-import com.vaishnavishealthcare.entity.Patient;
-import com.vaishnavishealthcare.repository.PatientRepository;
-import com.vaishnavishealthcare.service.PatientService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import com.vaishnavishealthcare.feature.patient.entity.Patient;
+import com.vaishnavishealthcare.feature.patient.repository.PatientRepository;
+import com.vaishnavishealthcare.feature.patient.service.PatientService;
 
 import java.util.List;
 

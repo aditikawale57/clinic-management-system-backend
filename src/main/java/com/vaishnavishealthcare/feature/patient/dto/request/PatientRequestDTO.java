@@ -1,4 +1,4 @@
-package com.vaishnavishealthcare.dtos.request;
+package com.vaishnavishealthcare.feature.patient.dto.request;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotBlank;

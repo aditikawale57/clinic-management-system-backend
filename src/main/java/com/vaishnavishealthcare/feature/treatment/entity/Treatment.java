@@ -1,4 +1,6 @@
-package com.vaishnavishealthcare.entity;
+package com.vaishnavishealthcare.feature.treatment.entity;
+
+import com.vaishnavishealthcare.feature.consultation.entity.Consultation;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

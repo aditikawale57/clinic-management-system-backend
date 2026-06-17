@@ -1,8 +1,9 @@
-package com.vaishnavishealthcare.repository;
+package com.vaishnavishealthcare.feature.treatment.repository;
 
-import com.vaishnavishealthcare.entity.Treatment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.vaishnavishealthcare.feature.treatment.entity.Treatment;
 
 @Repository
 public interface TreatmentRepository extends JpaRepository<Treatment, Long> {
